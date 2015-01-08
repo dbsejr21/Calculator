@@ -1,33 +1,33 @@
 package com.maple.calc;
 
 public class Calculator {
-	String plus(double n1, double n2) {
+	protected String plus(double num1, double num2) {
 		String retStr = null;
-		retStr = Double.toString(n1 + n2);
+		retStr = Double.toString(num1 + num2);
 		return retStr;
 	}
 
-	String sub(double n1, double n2) {
+	protected String sub(double num1, double num2) {
 		String retStr = null;
-		retStr = Double.toString(n1 - n2);
+		retStr = Double.toString(num1 - num2);
 		return retStr;
 	}
 
-	String multiply(double n1, double n2) {
+	protected String multiply(double num1, double num2) {
 		String retStr = null;
-		retStr = Double.toString(n1 * n2);
+		retStr = Double.toString(num1 * num2);
 		return retStr;
 	}
 
-	String div(double n1, double n2) {
+	protected String div(double num1, double num2) {
 		String retStr = null;
-		retStr = Double.toString(n1 / n2);
+		retStr = Double.toString(num1 / num2);
 		return retStr;
 	}
 
-	String hexa(int n) {
+	protected String toHexa(int num) {
 		String retStr = null;
-		retStr = Integer.toHexString(n);
+		retStr = Integer.toHexString(num);
 		return retStr;
 	}
 }
